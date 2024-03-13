@@ -62,7 +62,7 @@ The app logs weather data and diagnostic info, see below for more information.
 
 ###### Included Unit Test:
 
-- `test_project.py`
+- `test_weather.py`
 
 ## Setup:
 
@@ -157,13 +157,13 @@ as the unit test will bypass those opening and closing log entries, but the func
 > [!IMPORTANT]
 The unit test will bypass the log folder/file pruning. Just run the program in `NORMAL` or `USER` mode and it will deal with them for you. Or run it manually using either `PURGE-LOGS` or `APP-RESET` mode.</li>
 >
-> If your unit test output is as follows, you have an invalid or no API key in the project.py file.
+> If your unit test output is as follows, you have an invalid or no API key in the weather.py file.
 
     ===================================== short test summary info ======================================
-    FAILED test_project.py::TestMainModeManual::test_mainModeManual_valid - AssertionError: 8 != 1
-    FAILED test_project.py::TestGetWeather::test_getWeather_valid - AssertionError: 401 != 200
-    FAILED test_project.py::TestCoordsByLocationName::test_coordsByLocationName_denver - SystemExit: 8
-    FAILED test_project.py::TestCoordsByLocationName::test_coordsByLocationName_seattle - SystemExit: 8
+    FAILED test_python.py::TestMainModeManual::test_mainModeManual_valid - AssertionError: 8 != 1
+    FAILED test_python.py::TestGetWeather::test_getWeather_valid - AssertionError: 401 != 200
+    FAILED test_weather.py::TestCoordsByLocationName::test_coordsByLocationName_denver - SystemExit: 8
+    FAILED test_weather.py::TestCoordsByLocationName::test_coordsByLocationName_seattle - SystemExit: 8
     =================================== 4 failed, 20 passed in 3.39s ===================================
 
 
